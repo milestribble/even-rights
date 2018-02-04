@@ -1,0 +1,110 @@
+Link {
+  text-decoration: none;
+}
+
+.promotionsBackground {
+  background-image: url('/images/promotions.jpg');
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+}
+.promotionsBackgroundMask {
+  background: rgba(50, 10, 10, 0.4);
+  height: 100vh;
+  width: 100vw;
+}
+.promotions {
+  justify-content: space-around;
+}
+.promotionsBlock {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+.promotionsUnit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.promotionsUnitTitle {
+  color: white;
+  font-family: 'Open Sans';
+  /* text-decoration: none; */
+  /* border: 1px solid green; */
+}
+
+.disabled {
+  color: lightgrey;
+  fill: lightgrey;
+}
+@media screen and (min-width: 0px) {
+  .promotionsBackground {
+    background-position: 25% center;
+  }
+  .promotionsBlock {
+    position: absolute;
+    height: calc(100vh - 150px);
+    background-color: transparent;
+    top: 100px;
+    width: 100vw;
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    align-items: center;
+    /* align-items: center; */
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .promotionsUnitIcon {
+    /* width: 75px;
+    height: 75px; */
+    width: calc((100vh - 100px)*.15);
+    height: calc((100vh - 100px)*.15);
+  }
+  .promotionsUnitTitle {
+    font-size: 1em;
+    letter-spacing: 7px;
+  }
+  .promotionsUnit {
+    /* width: 50vw;
+    height: 50vw; */
+    width: calc((100vh - 100px)/4);
+    height: calc((100vh - 100px)/4);  .merchandiseUnitIcon {
+        width: 100px;
+        height: 100px;
+      }
+  }
+}
+
+@media screen and (min-width: 515px) {
+  .promotionsBackground {
+    background-position: center 0%;
+  }
+  .promotionsBlock {
+    flex-direction: row;
+  }
+  .promotionsUnitIcon {
+    width: 100px;
+    height: 100px;
+  }
+  .promotionsUnitTitle {
+    font-size: 1em;
+    letter-spacing: 5px;
+  }
+  .promotionsUnit {
+    width: 25vw;
+    height: 25vw;
+  }
+}
+
+
+@media screen and (min-width: 963px) {
+  .promotionsUnitIcon {
+    width: 100px;
+    height: 100px;
+  }
+}

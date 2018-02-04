@@ -1,0 +1,64 @@
+.PageTitle {
+  display: inline-block;
+  width: 100%;
+  color: black;
+  text-align: center;
+
+  font-size: 1em;
+  font-family: 'Muli';
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+
+.PageBlock {
+  padding-top: 100px;
+  margin-bottom: 50px;
+  color: white;
+}
+
+.PageUnitCopyEntry {
+  /* display: inline;
+  position: relative; */
+}
+
+.PageUnitCopyEntryTitle {
+  font-family: 'Open Sans';
+  font-weight: 700;
+  /* display: inline;
+  position: relative; */
+}
+.PageUnitCopyEntryText {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  /* display: inline;
+  position: relative; */
+}
+
+@media screen and (min-width: 0px) {
+  .PageUnit {
+    position: relative;
+    width: 95vw;
+    margin: 2.5vw;
+    margin-bottom: 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    color: #878b91;
+  }
+}
+
+@media screen and (min-width: 515px) {
+  .PageUnit {
+    flex-direction: row;
+  }
+  .PageUnitCopy {
+    width: 100%
+  }
+}
+
+@media screen and (min-width: 963px) {
+  /* .PageUnit {
+    height: 800px;
+  } */
+}

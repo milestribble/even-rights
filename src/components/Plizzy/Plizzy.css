@@ -1,0 +1,118 @@
+.plizzyBackground {
+  background-image: url('/images/plizzy2.jpg');
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+}
+#plizzy1{
+  background-image: url('/images/plizzy/1.jpg');
+  background-position: 40% 50%;
+}
+#plizzy2{
+  background-image: url('/images/plizzy/2.jpg');
+  background-position: 40% 50%;
+}
+#plizzy3{
+  background-image: url('/images/plizzy/3.jpg');
+  background-position: 80% 50%;
+}
+.plizzy {
+  position: relative;
+  color: black;
+  font-family: 'Open Sans';
+  max-height: 100%;
+  top: 90px;
+  width: 50%;
+  margin-left: 10px;
+  text-shadow: 0px 0px 15px white, 0px 0px 10px white, 0px 0px 5px white,
+               0px 0px 15px white, 0px 0px 10px white, 0px 0px 5px white;
+}
+
+.plizzyUnitTitle {
+  color: white;
+  font-family: 'Open Sans';
+  /* border: 1px solid green; */
+}
+
+@media screen and (min-width: 0px) {
+  .plizzyBackground {
+    background-size: cover;
+    background-position: 75% 50%;
+  }
+  .plizzyBlock {
+    position: absolute;
+    height: calc(100vh - 150px);
+    background-color: transparent;
+    top: 100px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .plizzyUnitIcon {
+    width: calc((100vh - 100px)*.15);
+    height: calc((100vh - 100px)*.15);
+  }
+  .plizzyUnitTitle {
+    font-size: 1em;
+    letter-spacing: 7px;
+  }
+  .plizzyUnit {
+    width: calc((100vh - 100px)/4);
+    height: calc((100vh - 100px)/4);
+  }
+  .plizzyButtons {
+    /* float: left; */
+    /* max-width: 50%; */
+    position: relative;
+    display: block;
+    width: 80%;
+    margin: 5%;
+    border: 2px solid white;
+    box-shadow: 0px 0px 20px 1px white;
+  }
+}
+
+@media screen and (min-width: 515px) {
+  .plizzyBackground {
+    background-position: 50% 10%;
+  }
+  .plizzyBlock {
+    flex-direction: row;
+  }
+  .plizzyUnitIcon {
+    width: 100px;
+    height: 100px;
+  }
+  .plizzyUnitTitle {
+    font-size: 1em;
+    letter-spacing: 5px;
+  }
+  .plizzyUnit {
+    width: 25vw;
+    height: 25vw;
+  }
+}
+
+
+@media screen and (min-width: 963px) {
+  .plizzyUnitIcon {
+    width: 215px;
+    height: 215px;
+  }
+  #plizzy1{
+    background-image: url('/images/plizzy/1.jpg');
+    background-position: 40% 20%;
+  }
+  #plizzy2{
+    background-image: url('/images/plizzy/2.jpg');
+    background-position: 40% 30%;
+  }
+  #plizzy3{
+    background-image: url('/images/plizzy/3.jpg');
+    background-position: 80% 50%;
+  }
+}

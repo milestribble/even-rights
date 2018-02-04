@@ -1,0 +1,116 @@
+.eventsBackground {
+  background-image: url('/images/promotions.jpg');
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+}
+
+.eventsHeader {
+  text-align: center;
+  /* font-family: 'Multi'; */
+}
+.eventsDesc {
+  width: 80%;
+  margin: 3%;
+  margin-top: 0%;
+  font-family: 'Open Sans';
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-shadow: 0px 0px 15px black, 0px 0px 10px black, 0px 0px 5px black,
+               0px 0px 15px black, 0px 0px 10px black, 0px 0px 5px black;
+}
+.eventsATC {
+  position: relative;
+  background-color: #3d8ade;
+  min-height: 50px;
+  width: 100px;
+  margin: 2.5vw;
+  float: right;
+  border-radius: 5px;
+  /* margin-top: calc(80px + 2.5vw); */
+  border: none;
+  border-radius: 3px;
+  color: white;
+  font-weight: 700;
+  font-family: 'Muli';
+  font-size: 1em;
+  letter-spacing: 5px;
+
+  /* margin-bottom: 50px; */
+  /* box-shadow: 1px 1px 7px 1px black; */
+}
+.eventsTitle {
+  width: 94%;
+  margin: 3%;
+  margin-bottom: 0%;
+  font-family: 'Muli';
+  font-size: 1.5em;
+  font-weight: 700;
+  text-align: center;
+}
+.eventsUnitTitle {
+  color: white;
+  /* border: 1px solid green; */
+}
+.descLabel {
+  width: 90%;
+  margin: 5%;
+  /* font-family: 'Open Sans'; */
+  font-family: 'Multi';
+
+}
+@media screen and (min-width: 0px) {
+  .eventsBackground {
+    background-position: 50% 50%;
+  }
+  .eventsFrame {
+    width: 80%;
+    height: 350px;
+    margin: 5%;
+  }
+}
+
+@media screen and (min-width: 515px) {
+  /* .eventsUnit {
+    display: block;
+  }
+  .eventsFrame {
+    width: 90%;
+    height: 300px;
+    margin: 5%;
+  } */
+  .eventsUnit {
+    /* display: flex; */
+    width: 45vw;
+    margin: 2vw;
+  }
+  .events {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100vw;
+    overflow-x: none;
+  }
+  .eventsFrame {
+    width: 90%;
+    height: 300px;
+    margin: 5%;
+  }
+}
+
+@media screen and (min-width: 963px) {
+  .eventsUnit {
+    display: block;
+    /* height: 800px; */
+  }
+  .eventsUnitIcon {
+    width: 215px;
+    height: 215px;
+  }
+  .eventsFrame {
+    width: 94%;
+    height: 500px;
+    margin: 3%;
+  }
+}

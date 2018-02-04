@@ -1,0 +1,19 @@
+.PageUnit.displayUnit {
+  align-items: initial;
+}
+
+.displayFrame {
+  width: 80vw;
+  margin-left: calc(7.5vw/2);
+  height: auto;
+  padding-bottom: 10px;
+}
+
+.merchDesc.displayDesc {
+  padding-top: 10px;
+}
+
+.displayDescCopy {
+  padding-bottom: 10px;
+  font-size: .75em;
+}

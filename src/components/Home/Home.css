@@ -1,0 +1,44 @@
+.home {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  background-image: url('/images/home/escalate.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  justify-content: flex-end;
+}
+
+.homeIcon {
+  background-image: url('/images/home/equalityw.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-grow: 1;
+}
+
+.homeIntroText {
+  color: white;
+  font-family: 'Open Sans';
+  letter-spacing: 2px;
+  font-weight: 300;
+  text-shadow: .5px .5px 1px white;
+  text-align: center;
+  padding: 10px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+
+@media screen and (min-width: 0px) {
+
+}
+
+@media screen and (min-width: 515px) {
+
+}
+
+@media screen and (min-width: 963px) {
+
+}

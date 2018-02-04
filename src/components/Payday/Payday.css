@@ -1,0 +1,59 @@
+.paydayBackground {
+  background: url('/images/payday.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+}
+
+.paydayContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-top: 90px;
+  z-index: 2;
+  position: relative;
+  height: calc(100vh - 90px);
+}
+
+
+.paydayFrame {
+  background: url('/images/paydaysplash.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-grow: 1;
+}
+
+@media screen and (min-width: 0px) {
+  .paydayBlock {
+    position: absolute;
+    height: calc(100vh - 150px);
+    background-color: transparent;
+    top: 100px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .paydayFrame {
+    width: 90%;
+    height: 350px;
+    margin: 0%;
+  }
+}
+
+@media screen and (min-width: 515px) {
+  .paydayContainer {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 963px) {
+
+}

@@ -1,0 +1,124 @@
+input, textarea {
+  width: 100%;
+  border: 1px solid darkgrey;
+  font-size: 1em;
+}
+.contact {
+  height: 100vh;
+  width: 100vw;
+  z-index: 21;
+  background: rgba(0,0,0,0.8);
+  position: fixed;
+}
+.contactContainer {
+  display: flex;
+  /* margin-top: 110px; */
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  height: calc(100% - 130px);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  font-family: 'Open Sans'
+}
+.contactModal {
+  /* margin-left: 20px; */
+  width: calc(100% - 90px);
+  background-color: rgba(255,255,255,0.8);
+  border-radius: 5px;
+  /* text-align: center; */
+}
+
+.cformRow {
+  display: flex;
+  margin: 5px;
+  width: 90%;
+}
+
+.cformIcon {
+  margin: 5px;
+  height: 50px;
+  width: 50px;
+}
+.cformEntity {
+  flex-grow: 1;
+  padding-left: 15px;
+  padding-right: 10px;
+}
+
+#contactForm {
+  padding-top: 3%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.cformSubmit {
+  position: relative;
+  background-color: #3d8ade;
+  min-height: 40px;
+  width: 115px;
+  margin-bottom: 2.5vw;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-weight: 700;
+  font-family: 'Muli';
+  font-size: .9em;
+  letter-spacing: 4px;
+  text-align: center;
+
+  /* margin-bottom: 50px; */
+  /* box-shadow: 1px 1px 7px 1px black; */
+}
+@media screen and (min-width: 0px) {
+  .contactModalExit {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 515px) {
+  input, textarea {
+    font-size: 1.2em;
+  }
+  .contactModal {
+    width: 500px;
+    margin-left: calc(50vw - 250px);
+  }
+  .contactContainer {
+    display: inline;
+    margin-top: 0px;
+    height: calc(100% - 130px);
+    font-family: 'Open Sans';
+  }
+  .contact {
+    overflow-y: scroll;
+  }
+  .contactModalExit {
+    position: absolute;
+    left: calc(50vw + 225px);
+    top: 40px;
+  }
+}
+
+@media screen and (min-width: 963px) {
+  .contactModal {
+    width: 500px;
+    margin-left: 0;
+  }
+  .contactContainer {
+    display: flex;
+    /* margin-top: 110px; */
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: calc(100% - 130px);
+    /* padding-top: 60px;
+    padding-bottom: 60px; */
+    font-family: 'Open Sans';
+    overflow-y: scroll;
+  }
+
+}

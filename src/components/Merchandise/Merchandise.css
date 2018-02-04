@@ -1,0 +1,84 @@
+.merchandiseBackground {
+  background-image: url('/images/merchandise/1.jpg');
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+}
+.merchandiseBackgroundMask {
+  background: rgba(50, 100, 135, 0.2);
+  height: 100vh;
+  width: 100vw;
+}
+.merchandiseUnit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.merchandiseUnitTitle {
+  color: white;
+  font-family: 'Open Sans';
+  /* border: 1px solid green; */
+}
+
+@media screen and (min-width: 0px) {
+  .merchandiseBlock {
+    position: absolute;
+    height: calc(100vh - 150px);
+    background-color: transparent;
+    top: 100px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .merchandiseUnitIcon {
+    width: calc((100vh - 100px)*.15);
+    height: calc((100vh - 100px)*.15);
+  }
+  .merchandiseUnitTitle {
+    font-size: 1em;
+    letter-spacing: 7px;
+  }
+  .merchandiseUnit {
+    width: calc((100vh - 100px)/4);
+    height: calc((100vh - 100px)/4);
+  }
+  .merchandiseBackground {
+    background-position: 45% 50%;
+  }
+}
+
+@media screen and (min-width: 515px) {
+  .merchandiseBlock {
+    flex-direction: row;
+  }
+  .merchandiseUnitIcon {
+    width: 100px;
+    height: 100px;
+  }
+  .merchandiseUnitTitle {
+    font-size: 1em;
+    letter-spacing: 5px;
+  }
+  .merchandiseUnit {
+    width: 25vw;
+    height: 25vw;
+  }
+}
+
+
+@media screen and (min-width: 963px) {
+  .merchandiseUnitIcon {
+    width: 215px;
+    height: 215px;
+  }
+  .merchandiseBackground {
+    background-position: 50% 100%;
+  }
+}

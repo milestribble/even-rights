@@ -1,0 +1,96 @@
+.interviewBackground {
+  background-image: url('/images/promotions.jpg');
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+}
+.interviewBackgroundMask {
+  background: rgba(50, 10, 10, 0.5);
+  height: 100vh;
+  width: 100vw;
+}
+.interview {
+  padding-top: 100px;
+  font-family: 'Muli';
+  overflow-y: scroll;
+}
+.interviewHeader {
+  text-align: center;
+  /* font-family: 'Multi'; */
+}
+.interviewDesc {
+  width: 90%;
+  margin: 3%;
+  margin-top: 0%;
+  font-family: 'Open Sans';
+  text-shadow: 0px 0px 15px black, 0px 0px 10px black, 0px 0px 5px black,
+               0px 0px 15px black, 0px 0px 10px black, 0px 0px 5px black;
+
+}
+.interviewTitle {
+  width: 94%;
+  margin: 3%;
+  margin-bottom: 0%;
+  font-family: 'Muli';
+  font-size: 2em;
+  font-weight: 700;
+  text-align: center;
+}
+.interviewUnitTitle {
+  color: white;
+  /* border: 1px solid green; */
+}
+.descLabel {
+  width: 90%;
+  margin: 5%;
+  /* font-family: 'Open Sans'; */
+  font-family: 'Multi';
+
+}
+@media screen and (min-width: 0px) {
+  .interviewBlock {
+    position: relative;
+    background-color: rgba(0,0,0,0.5);
+    width: 95vw;
+    margin: 2.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 1px 1px 7px 1px grey;
+    border: 1px solid black;
+    color: white;
+  }
+  .interviewFrame {
+    width: 90%;
+    margin: 5%;
+  }
+}
+
+@media screen and (min-width: 515px) {
+  .interviewBlock {
+    display: block;
+  }
+  .interviewFrame {
+    width: 90%;
+    height: 300px;
+    margin: 5%;
+  }
+}
+
+@media screen and (min-width: 963px) {
+  .interviewBlock {
+    display: block;
+    height: 800px;
+  }
+  .interviewUnitIcon {
+    width: 215px;
+    height: 215px;
+  }
+  .interviewFrame {
+    width: 94%;
+    height: 500px;
+    margin: 3%;
+  }
+}

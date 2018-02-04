@@ -1,0 +1,45 @@
+.PageUnit.eventsUnit {
+  margin-bottom: 0px;
+}
+
+@media screen and (min-width: 0px) {
+  .projectsPicture {
+    height: 40vw;
+    width: 40vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+}
+
+@media screen and (min-width: 515px) {
+  .projectsPicture {
+    height: 20vw;
+    width: 20vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+  }
+}
+
+@media screen and (min-width: 963px) {
+  .eventsUnit {
+    display: block;
+    /* height: 800px; */
+  }
+  .eventsUnitIcon {
+    width: 215px;
+    height: 215px;
+  }
+  .eventsFrame {
+    width: 94%;
+    height: 500px;
+    margin: 3%;
+  }
+}
